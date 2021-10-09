@@ -1,5 +1,8 @@
 package lk.ijse.thogakade.bo;
 
+import lk.ijse.thogakade.bo.custom.impl.CustomerBOImpl;
+import lk.ijse.thogakade.bo.custom.impl.ItemBOImpl;
+
 public class BOFactory {
     private static BOFactory boFactory;
 
@@ -24,8 +27,8 @@ public class BOFactory {
                 return new CustomerBOImpl();
             case ITEM:
                 return new ItemBOImpl();
-            case ORDER:
-                return new PurchaseOrderBOImpl();
+//            case ORDER:
+//                return new PurchaseOrderBOImpl();
             default:
                 return null;
         }
