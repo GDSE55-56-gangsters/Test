@@ -1,5 +1,7 @@
 package lk.ijse.thogakade.bo;
 
+import lk.ijse.thogakade.bo.custom.impl.ItemBOImpl;
+
 public class BOFactory {
     private static BOFactory boFactory;
 
@@ -21,11 +23,11 @@ public class BOFactory {
     public SuperBO getBO(BOTypes types) {
         switch (types) {
             case CUSTOMER:
-                return new CustomerBOImpl();
+                return null;
             case ITEM:
                 return new ItemBOImpl();
             case ORDER:
-                return new PurchaseOrderBOImpl();
+                return  null;
             default:
                 return null;
         }
